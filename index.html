@@ -18,11 +18,11 @@
     </div>
     <div id="form">
       <form onsubmit="calculate(event)">
-        Enter Bill Amount:
-        $<input type="text" name="bill" id="bill"><br>
+        Enter bill amount:
+        $<input type="text" name="bill" id="bill" required><br>
         Enter party size:
-        <input type="number" name="party" id="party" min="2" max="30"> people<br>
-        Enter tip percentage:
+        <input type="number" name="party" id="party" min="2" max="30" required> people<br>
+        Enter tip percentage (optional):
         <input type="number" name="tip" id="tip" min="0" max="100">%<br>
         <input type="submit">
       </form>
@@ -31,6 +31,7 @@
   <footer>
     Coded by Russell Koons &copy;2019
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
