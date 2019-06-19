@@ -5,7 +5,7 @@ function calculate(e) {
 
   if (isNaN(bill)) {
     $('#result').empty().append(
-      '<p>Please enter a valid number</p>'
+      '<p id="error">Please enter a valid number</p>'
     );
     return;
   }
