@@ -4,7 +4,7 @@ function calculate(e) {
   const bill = $('#bill').val();
 
   if (isNaN(bill)) {
-    $('#result').empty().append(
+    $('#errorcontainer').empty().append(
       '<p id="error">Please enter a valid number</p>'
     );
     return;
@@ -17,11 +17,13 @@ function calculate(e) {
   const splitTip = Math.round(bill * tip / party * 100) / 100;
 
   if (splitTip === 0) {
+    $('#errorcontainer').empty();
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
       <p id="splitbill">$${splitBill.toFixed(2)}</p>`
     );
   } else {
+    $('#errorcontainer').empty();
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
       <p id="splitbill">$${splitBill.toFixed(2)}</p>

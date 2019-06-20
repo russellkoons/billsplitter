@@ -13,6 +13,10 @@ header {
   margin-bottom: 20px;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 form {
   font-size: 23px;
 }
@@ -33,8 +37,22 @@ input {
   font-family: 'Roboto', sans-serif;
 }
 
+#error {
+  color: red;
+  font-size: 23px;
+}
+
 #submit {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
   height: 40px;
   width: 200px;
   font-size: 20px;
+}
+
+#submit:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s;
 }
