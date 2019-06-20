@@ -37,6 +37,12 @@ input {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  font-size: 23px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 #error {
   color: red;
   font-size: 23px;
@@ -55,4 +61,9 @@ input {
   background-color: white;
   color: black;
   transition: 0.4s;
+}
+
+.split {
+  font-size: 35px;
+  font-weight: bold;
 }

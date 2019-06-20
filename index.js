@@ -20,15 +20,15 @@ function calculate(e) {
     $('#errorcontainer').empty();
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
-      <p id="splitbill">$${splitBill.toFixed(2)}</p>`
+      <p class="split">$${splitBill.toFixed(2)}</p>`
     );
   } else {
     $('#errorcontainer').empty();
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
-      <p id="splitbill">$${splitBill.toFixed(2)}</p>
+      <p class="split">$${splitBill.toFixed(2)}</p>
       <p>Your tip is...</p>
-      <p id="splittip">$${splitTip.toFixed(2)}</p>`
+      <p class="split">$${splitTip.toFixed(2)}</p>`
     );
   }
 }
