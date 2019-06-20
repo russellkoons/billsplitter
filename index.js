@@ -19,7 +19,7 @@ function calculate(e) {
   if (splitTip === 0) {
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
-      <p>$${splitBill.toFixed(2)}</p>`
+      <p id="splitbill">$${splitBill.toFixed(2)}</p>`
     );
   } else {
     $('#result').empty().append(

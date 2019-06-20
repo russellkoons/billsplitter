@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bill Splitter!</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css"> 
+  <title>Bill Splitter</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css">
 </head>
 <body>
   <header>
-    <h1>Bill Splitter!</h1>
-    <span>Type in the bill amount and select the number in your party and get an even split!</span>
+    <h1>Bill Splitter</h1>
+    <span>Type in the bill amount and select the number in your party and get an even split</span>
   </header>
   <main>
     <div id="result">
@@ -18,13 +19,13 @@
     </div>
     <div id="form">
       <form onsubmit="calculate(event)">
-        Enter bill amount:
-        $<input type="text" name="bill" id="bill" required><br>
-        Enter party size:
-        <input type="number" name="party" id="party" min="2" max="30" required> people<br>
-        Enter tip percentage (optional):
-        <input type="number" name="tip" id="tip" min="0" max="100">%<br>
-        <input type="submit">
+        <label>Bill: $</label>
+        <input type="text" name="bill" id="bill" required><br><br>
+        <label>Party: </label>
+        <input type="number" name="party" id="party" min="2" max="30" required> people<br><br>
+        <label>Tip % (optional): </label>
+        <input type="number" name="tip" id="tip" min="0" max="100"> %<br><br>
+        <input id="submit" type="submit">
       </form>
     </div>
   </main>

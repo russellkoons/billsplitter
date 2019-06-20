@@ -1,0 +1,40 @@
+html {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #111951 0%, #421F6F 30%, #612384 100%) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+form {
+  font-size: 23px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 99%;
+}
+
+input {
+  position: relative;
+  bottom: 5px;
+  height: 20px;
+  border-radius: 25px;
+  border-width: 0px;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#submit {
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+}
