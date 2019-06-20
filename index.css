@@ -1,13 +1,15 @@
 html {
   text-align: center;
+  color: white;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #111951 0%, #421F6F 30%, #612384 100%) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
-  height: 100vh;
 }
 
 header {
