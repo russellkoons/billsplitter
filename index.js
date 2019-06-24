@@ -15,6 +15,7 @@ function calculate(e) {
 
   const splitBill = Math.round(bill / party * 100) / 100;
   const splitTip = Math.round(bill * tip / party * 100) / 100;
+  const total = splitBill + splitTip;
 
   if (splitTip === 0) {
     $('#errorcontainer').empty();
@@ -27,8 +28,10 @@ function calculate(e) {
     $('#result').empty().append(
       `<p>Your split bill for ${party} people is...</p>
       <p class="split">$${splitBill.toFixed(2)}</p>
-      <p>Your tip is...</p>
-      <p class="split">$${splitTip.toFixed(2)}</p>`
+      <p>And your tip is...</p>
+      <p class="split">$${splitTip.toFixed(2)}</p>
+      <p>For a total of...</p>
+      <p class="split">$${total.toFixed(2)}</p>`
     );
   }
 }
